@@ -22,3 +22,16 @@
   margin: 0 auto;
   padding: 0 2rem;
 }
+
+.wrapper {
+  border: 1px solid red;
+}
+
+.img {
+  height: 50vh;
+}
+
+.img img {
+  height: 100%;
+  display: inline-block;
+}

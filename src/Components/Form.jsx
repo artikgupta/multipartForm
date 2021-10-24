@@ -76,18 +76,20 @@ function Form() {
   return (
     <div className="container">
       <div className="flex-col">
-        <div className="wrapper">
+        <div className="wrapper flex">
           <div className="img">
-            <img src="../../public/assets/checklist-3693113__340.webp" alt="" />
+            <img src="/assets/checklist.webp" alt="" />
           </div>
-          <Header currentStepCount={currentStepCount} />
-          {renderForms()}
-          {currentStepCount > 0 ? (
-            <button onClick={handlePrev}>Prev</button>
-          ) : null}
-          {currentStepCount < 2 ? (
-            <button onClick={handleNext}>Next</button>
-          ) : null}
+          <div className="form">
+            <Header currentStepCount={currentStepCount} />
+            {renderForms()}
+            {currentStepCount > 0 ? (
+              <button onClick={handlePrev}>Prev</button>
+            ) : null}
+            {currentStepCount < 2 ? (
+              <button onClick={handleNext}>Next</button>
+            ) : null}
+          </div>
         </div>
       </div>
     </div>
