@@ -74,15 +74,15 @@ function Form() {
   };
 
   return (
-    <div className="container">
-      <div className="flex-col">
-        <div className="wrapper flex">
-          <div className="img">
-            <img src="/assets/checklist.webp" alt="" />
-          </div>
-          <div className="form">
-            <Header currentStepCount={currentStepCount} />
-            {renderForms()}
+    <div className="border border-gray-800 flex items-center justify-center h-screen">
+      <div className=" flex  items-center justify-center px-4   border border-gray-800 border-box ">
+        <div className="img">
+          <img src="/assets/checklist.webp" alt="checklist" />
+        </div>
+        <div className="form  ">
+          <Header currentStepCount={currentStepCount} />
+          {renderForms()}
+          <div className="flex">
             {currentStepCount > 0 ? (
               <button onClick={handlePrev}>Prev</button>
             ) : null}
